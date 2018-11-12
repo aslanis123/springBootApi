@@ -20,4 +20,8 @@ public class UserService {
     public User getUserWithId(Integer id) {
         return userRepository.findUserById(id);
     }
+
+    public void saveUser(User user) {
+        userRepository.save(user);
+    }
 }

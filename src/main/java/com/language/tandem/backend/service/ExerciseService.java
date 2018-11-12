@@ -14,7 +14,7 @@ public class ExerciseService {
     private ExersiceRepository exersiceRepository;
 
     public List<Exercise> getListOfExercises(){
-        return exersiceRepository.getExercises();
+        return exersiceRepository.findAll();
     }
 
     public Exercise getExerciseByName(String name){

@@ -7,7 +7,7 @@ import java.util.List;
 
 public interface ExersiceRepository extends JpaRepository<Exercise, Long> {
 
-    List<Exercise> getExercises();
+    List<Exercise> findAll();
 
     Exercise getExerciseByName(String name);
 }
